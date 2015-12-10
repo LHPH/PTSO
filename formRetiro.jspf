@@ -1,0 +1,37 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="form_ret" style="display:none">
+    <div class="panel panel-primary" style="width:400px;margin-top:150px;padding-bottom: 10px;">
+        <div class="panel-heading">Retiro de Saldo</div>
+        <br />
+        <br />
+           <div id="popupRet" align="center" >
+               
+               <table style="border-collapse: separate;border-spacing: 5px 5px">
+                   <tr><td><input type="button" value="&nbsp;$20&nbsp;" class="btn btn-info" onclick="operRet(20)" /></td>
+                       <td><input type="button" value="&nbsp;$50&nbsp;" class="btn btn-primary" onclick="operRet(50)" /></td>
+                   </tr>
+                   <tr>
+                       <td><input type="button" value="&nbsp;$100" class="btn btn-success" onclick="operRet(100)" /></td>
+                       <td><input type="button" value="&nbsp;$200" class="btn btn-default" onclick="operRet(200)" /></td>
+                   </tr>
+                   <tr>
+                       <td><input type="button" value="&nbsp;$500" class="btn btn-warning" onclick="operRet(500)" /></td>
+                       <td><input type="button" value="$1000" class="btn btn-danger" onclick="operRet(1000)" /></td>
+                   </tr>
+               </table>
+               
+              <!-- <div class="input-group" style="width:350px;" >
+                   <span class="input-group-addon" style="height:10px;">Saldo a Retirar</span>
+                   <input type="text" id="saldo_ret" class="form-control" name="saldo_ret"/>
+               </div>-->
+               
+             <br />
+             <br />
+             <input type="button" value="Cancelar"  class="btn btn-danger" onclick="ocultarRet();" />
+            
+           <!-- </form> -->
+           </div>
+        
+    </div>
+</div>
